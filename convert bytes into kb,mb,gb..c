@@ -1,10 +1,14 @@
 # include <stdio.h>
 int main (){
-long bytes;
+float bytes,kb,mb,gb;
 printf("enter bytes:\n");
-scanf("%1d",&bytes);
-printf("kb=%.2f\n",bytes/1024.0);
-printf("mb=%.2f\n",bytes/(1024.0*1024));
-printf("gb=%.2f\n",bytes/(1024.0*1024*1024));
+scanf("%f",&bytes);
+  kb=bytes/1024.0;
+  mb=kb/1024.0;
+  gb=mb/1024.0;
+printf("kb=%.2f\n",kb);
+printf("mb=%.2f\n",mb);
+printf("gb=%.2f\n",gb);
 return 0;
 }
+
